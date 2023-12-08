@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/*************** RESET BÁSICO ***************/
+* {
+  margin: 0;
+  padding: 0;
+  background-color: RGB(248, 249, 250);
+}
+
+/*************** PROPIEDADES MENU ***************/
+#imgLogo {
+  height: 350px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#imgLogo:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link {
+  color: rgb(64, 11, 114) !important;
+}
+
+.collapse {
+  justify-content: space-between;
+}
+
+.navbar-toggler-icon {
+  color: #fff !important;
+  background-color: rgb(248, 249, 250);
+}
+
+.menuPrincipal {
+  position: relative;
+  z-index: 1;
+}
+
+/********** INDEX **********/
+#divBienvenida {
+  color: rgb(93, 37, 146);
+  text-align: center;
+  width: 100%;
+  margin: auto; 
+  padding: 0 15%;
+  background-size: cover;
+}
+
+#divBienvenida img {
+  display: block;
+  margin: auto; /* Centra la imagen verticalmente */
+  max-width: 40%; /* Asegura que la imagen no se salga del div */
+  padding-top: 5%;
+}
+#divBienvenida p {
+  font-size: larger;
+  color: black;
+}
+
+
+/********** ACERCA DE **********/
+.acercaDeDiv {
+  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.acercaDeDiv h3 {
+  color: rgb(93, 37, 146);
+}
+.acercaDeDiv p {
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 0 20px;
+  animation: slideInBottom 2s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/****** FORMULARIO CONTACTO ******/
+.formularioContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+.formularioContacto label {
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .formularioContacto {
+    display: flex;
+    height: 100vh;
+  }
+  .col-4 {
+    width: 100%; /* para que el formulario ocupe todo el ancho disponible */
+  }
+}
+
+.formularioContacto {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-color: rgb(248, 249, 250);
+  color: darkslategrey;
+  animation: slideInTop 2s ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/***** PRODUCTOS *****/
+.imagenProducto {
+  width: 100px;
+}
+
+#productos {
+  background-color: rgb(248, 249, 250);
+  color: rgb(79, 47, 116);
+}
+
+.slideInFromLeft {
+  animation: slideInLeft 2s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInFromRight {
+  animation: slideInRight 2s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.btn-secondary {
+  background-color: rgb(79, 47, 116);
+}
+
+/***** CARRITO *****/
+
+.carrito-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/*  botón del carrito */
+.carrito-btn {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #f8f9fa; 
+  border-radius: 50%; 
+  text-align: center;
+  line-height: 100px; 
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.carrito-btn:hover {
+  /* Agranda un poco el botón en el hover */
+  transform: scale(1.2);
+}
+
+.carrito-btn img {
+  width: 50px; 
+  height: 50px; 
+  vertical-align: middle;
+}

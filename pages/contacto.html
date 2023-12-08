@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- LOCAL STYLE -->
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="../images/logoFondoVerde.png" />
+
+    <title>Acerca De</title>
+  </head>
+  <body>
+    <header class="menuPrincipal container-fluid">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <!-- BOTÓN HAMBURGUESA -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container-fluid">
+          <!-- LINKS MENU -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- LOGO -->
+            <a class="logo" href="#">
+              <img
+                id="imgLogo"
+                src="../img/logo2.png"
+                alt="Logo"
+              />
+            </a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="acercaDe.html"
+                  >ACERCA DE NOSOTROS</a
+                >
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">PRODUCTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="formularioContacto d-flex">
+        <div class="col-4 text-md-start">
+          <h2 class="tituloFormContacto">Formulario de contacto</h2>
+          <form action="" method="post">
+            <div class="mb-3">
+              <label for="formNmobre" class="form-label">Nombre</label>
+              <input
+                type="name"
+                class="form-control"
+                id="formNmobre"
+                placeholder="Ingrese su Nombre"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="formEmail" class="form-label">Correo</label>
+              <input
+                type="email"
+                class="form-control"
+                id="formEmail"
+                placeholder="nombre@ejemplo.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="formTextArea" class="form-label">Mensaje</label>
+              <textarea
+                class="form-control"
+                id="formTextArea"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="submit" name="enviar_formulario" class="btn" id="enviarBtn">
+              <p>Enviar</p>
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <p>©Copyright 2050 de nadie. Todos los derechos son de todos.</p>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <!--  SWEET ALERT  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- MI JAVASCRIPT -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>
